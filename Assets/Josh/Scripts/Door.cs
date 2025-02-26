@@ -22,4 +22,19 @@ public class Door : MonoBehaviour
     {
         uiElement.SetActive(false);
     }
+    public void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            uiElement.SetActive(true);
+            if (Input.GetButtonDown("Interact"))
+            {
+                SceneManager.LoadScene(nextLevel);
+            }
+        }
+    }
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        uiElement.SetActive(false);
+    }
 }
