@@ -8,4 +8,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/WormsFolder/Scenes/MainMenu.unity
+    guid: 1d4d7f936cc791d49970a44f0e28f0d1
+  - enabled: 1
+    path: Assets/WormsFolder/Scenes/Level1.unity
+    guid: b8873c69bf065474f916f8a1b791ee89
+  - enabled: 1
+    path: Assets/WormsFolder/Scenes/Credits.unity
+    guid: 9772d256251307b4c8876958cb471fc6
   m_configObjects: {}
