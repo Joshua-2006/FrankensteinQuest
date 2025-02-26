@@ -119,7 +119,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones:
-    - name: bone_1
+    - name: head
       guid: eb4bb3eb34976a946bfd12e621a7c468
       position: {x: 321.5414, y: 241.9011, z: 0}
       rotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
@@ -128,7 +128,7 @@ TextureImporter:
       color:
         serializedVersion: 2
         rgba: 4278190335
-    - name: bone_2
+    - name: leg
       guid: 080722612c48c0747bd8174c84dbabe6
       position: {x: 563.0315, y: 477.22546, z: 0}
       rotation: {x: 0, y: 0, z: 0.7137872, w: 0.7003627}
@@ -137,7 +137,7 @@ TextureImporter:
       color:
         serializedVersion: 2
         rgba: 4278255615
-    - name: bone_3
+    - name: leg
       guid: c304a052fa773804ab8f34fe35ba5c39
       position: {x: 48.195198, y: 539.9103, z: 0}
       rotation: {x: 0, y: 0, z: 0.5719677, w: 0.82027614}
@@ -146,30 +146,30 @@ TextureImporter:
       color:
         serializedVersion: 2
         rgba: 4278255360
-    - name: bone_4
+    - name: body
       guid: 26ad103ae0cd7384b84604d6e9a4aa44
-      position: {x: -334.74957, y: -420.11212, z: 0}
-      rotation: {x: 0, y: 0, z: 0.20209478, w: 0.979366}
+      position: {x: 326.67953, y: 80.565155, z: 0}
+      rotation: {x: 0, y: 0, z: 0.7259393, w: 0.68775886}
       length: 152.3094
-      parentId: 2
+      parentId: -1
       color:
         serializedVersion: 2
         rgba: 4294967040
-    - name: bone_5
+    - name: arm_2
       guid: 7461e614b7f4aba49b00f329dd2911d8
-      position: {x: -269.43307, y: -252.58551, z: 0}
-      rotation: {x: 0, y: -0, z: 0.9990697, w: 0.04312508}
+      position: {x: 192.0624, y: 199.76936, z: 0}
+      rotation: {x: 0, y: 0, z: 0.8441792, w: -0.53606117}
       length: 94.239555
-      parentId: 2
+      parentId: -1
       color:
         serializedVersion: 2
         rgba: 4294901760
-    - name: bone_6
+    - name: arm_1
       guid: fb074071f943e1c4a851f0c3b4cc9efa
-      position: {x: -119.14914, y: 241.48978, z: 0}
-      rotation: {x: 0, y: 0, z: 0.459344, w: 0.8882585}
+      position: {x: 461.2974, y: 204.90681, z: 0}
+      rotation: {x: 0, y: 0, z: 0.5036129, w: -0.8639295}
       length: 98.017654
-      parentId: 4
+      parentId: -1
       color:
         serializedVersion: 2
         rgba: 4294902015
