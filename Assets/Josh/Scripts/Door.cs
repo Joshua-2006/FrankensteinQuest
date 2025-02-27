@@ -9,13 +9,13 @@ public class Door : MonoBehaviour
     public string nextLevel;
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.CompareTag("Player"))
+            uiElement.SetActive(true); 
+    }
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (Input.GetButtonDown("Interact"))
         {
-            uiElement.SetActive(true);
-            if(Input.GetKey(KeyCode.E))
-            {
-                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-            }
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
     }
     private void OnTriggerExit2D(Collider2D collision)
@@ -24,9 +24,12 @@ public class Door : MonoBehaviour
     }
     public void OnCollisionEnter2D(Collision2D collision)
     {
+        uiElement.SetActive(true);
+    }
+    private void OnCollisionStay2D(Collision2D collision)
+    {
         if (collision.gameObject.CompareTag("Player"))
         {
-            uiElement.SetActive(true);
             if (Input.GetButtonDown("Interact"))
             {
                 SceneManager.LoadScene(nextLevel);

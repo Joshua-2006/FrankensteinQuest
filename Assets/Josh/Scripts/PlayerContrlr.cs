@@ -64,5 +64,9 @@ public class PlayerContrlr : MonoBehaviour
                 SceneManager.LoadScene(SceneManager.GetActiveScene().name);
             }
         }
+        if(collision.CompareTag(""))
+        {
+
+        }
     }
 }
