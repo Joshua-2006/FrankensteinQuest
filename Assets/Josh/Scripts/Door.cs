@@ -12,9 +12,9 @@ public class Door : MonoBehaviour
         if(collision.CompareTag("Player"))
         {
             uiElement.SetActive(true);
-            if(Input.GetButtonDown("Interact"))
+            if(Input.GetKey(KeyCode.E))
             {
-                SceneManager.LoadScene(nextLevel);
+                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
             }
         }
     }

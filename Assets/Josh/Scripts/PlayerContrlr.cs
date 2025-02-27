@@ -12,6 +12,7 @@ public class PlayerContrlr : MonoBehaviour
     public bool grounded;
     public float jumpForce;
     public int jumps = 5;
+    public Door door;
     
     // Start is called before the first frame update
     void Start()
@@ -51,6 +52,17 @@ public class PlayerContrlr : MonoBehaviour
         if(collision.gameObject.CompareTag("Reset"))
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Door"))
+        {
+            door.uiElement.SetActive(true);
+            if (Input.GetKey(KeyCode.E))
+            {
+                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            }
         }
     }
 }
