@@ -14,9 +14,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Gabe's stuff/Gabe's other sruff/Starting level.unity
     guid: ded31e3b1fb20fd4997fe2308aa0989b
-  - enabled: 0
-    path: Assets/Josh/JoshTestScene.unity
-    guid: dc62eac19a1189b429ce2266c7464dbc
   - enabled: 1
     path: Assets/WormsFolder/Scenes/Level 1.unity
     guid: b8873c69bf065474f916f8a1b791ee89

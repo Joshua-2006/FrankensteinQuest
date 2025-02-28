@@ -13,11 +13,17 @@ public class PlayerContrlr : MonoBehaviour
     public float jumpForce;
     public int jumps = 5;
     public Door door;
-    
+
+    public GameObject deathBarrier;
+    public GameObject spawnPoint;
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+
+        //finding gameObjects 
+        deathBarrier = GameObject.Find("DeathBarrier");
+        spawnPoint = GameObject.Find("SpawnPoint");
     }
 
     // Update is called once per frame
@@ -52,6 +58,12 @@ public class PlayerContrlr : MonoBehaviour
         if(collision.gameObject.CompareTag("Reset"))
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
+
+        //if player falls off the map make sure to teleport them back to the spawn point
+        if(collision.gameObject.CompareTag("DeathBarrier"))
+        {
+            transform.position = spawnPoint.transform.position;
         }
     }
 }
