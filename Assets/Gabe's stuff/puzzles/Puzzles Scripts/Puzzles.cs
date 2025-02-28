@@ -20,7 +20,7 @@ public class Puzzles : MonoBehaviour
     {
         if(other.CompareTag("Puzzle"))
         {
-
+           
         }
     }
 }
