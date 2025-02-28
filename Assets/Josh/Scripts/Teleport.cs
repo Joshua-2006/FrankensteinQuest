@@ -20,7 +20,7 @@ public class Teleport : MonoBehaviour
     }
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (Input.GetButtonDown("Interact"))
+        if (Input.GetButton("Interact"))
         {
             player.transform.position = teleport.transform.position;
         }

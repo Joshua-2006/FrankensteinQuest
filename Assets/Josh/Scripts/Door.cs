@@ -13,9 +13,9 @@ public class Door : MonoBehaviour
     }
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (Input.GetButtonDown("Interact"))
+        if (Input.GetButton("Interact"))
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            SceneManager.LoadScene(nextLevel);
         }
     }
     private void OnTriggerExit2D(Collider2D collision)
