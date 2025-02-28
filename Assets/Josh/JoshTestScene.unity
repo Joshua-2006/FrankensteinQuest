@@ -339,6 +339,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &431837431 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4705406945417005019, guid: bc56ef664b7f22946b80e2f596463c98, type: 3}
+  m_PrefabInstance: {fileID: 4705406944470951590}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &534993638
 GameObject:
   m_ObjectHideFlags: 0
@@ -578,11 +583,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 634492532}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2905d5d73c9cd9c4380ff24e6a6b13f2, type: 3}
+  m_Script: {fileID: 11500000, guid: 15a8a4f5461947c409ceb559ce7210ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  uiElement: {fileID: 387589498}
-  nextLevel: JoshTestScene
+  teleport: {fileID: 387589498}
+  player: {fileID: 431837431}
 --- !u!1 &808667407
 GameObject:
   m_ObjectHideFlags: 0
@@ -820,7 +825,7 @@ PrefabInstance:
     - target: {fileID: 4705406945417005016, guid: bc56ef664b7f22946b80e2f596463c98, type: 3}
       propertyPath: door
       value: 
-      objectReference: {fileID: 634492536}
+      objectReference: {fileID: 0}
     - target: {fileID: 4705406945417005019, guid: bc56ef664b7f22946b80e2f596463c98, type: 3}
       propertyPath: m_Name
       value: Player
