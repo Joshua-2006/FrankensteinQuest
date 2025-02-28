@@ -54,19 +54,4 @@ public class PlayerContrlr : MonoBehaviour
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
     }
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.CompareTag("Door"))
-        {
-            door.uiElement.SetActive(true);
-            if (Input.GetKey(KeyCode.E))
-            {
-                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-            }
-        }
-        if(collision.CompareTag(""))
-        {
-
-        }
-    }
 }
