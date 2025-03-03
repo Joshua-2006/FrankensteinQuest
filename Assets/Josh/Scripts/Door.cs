@@ -23,10 +23,12 @@ public class Door : MonoBehaviour
     private void OnTriggerExit2D(Collider2D collision)
     {
         uiElement.SetActive(false);
+        uiElement2.SetActive(false);
     }
     public void OnCollisionEnter2D(Collision2D collision)
     {
         uiElement.SetActive(true);
+        uiElement2.SetActive(true);
     }
     private void OnCollisionStay2D(Collision2D collision)
     {
@@ -41,5 +43,6 @@ public class Door : MonoBehaviour
     private void OnCollisionExit2D(Collision2D collision)
     {
         uiElement.SetActive(false);
+        uiElement2.SetActive(false);
     }
 }
