@@ -646,7 +646,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac9a74bba64b8664dbf011e8836d3185, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextLevel: Level1
+  nextLevel: Starting level
   otherLevel: Credits
 --- !u!1 &867186021
 GameObject:

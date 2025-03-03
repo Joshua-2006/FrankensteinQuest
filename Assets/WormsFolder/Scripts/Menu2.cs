@@ -9,20 +9,20 @@ public class Menu2 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("Start"))
+        if (Input.GetButton("Start"))
         {
             Debug.Log("start has been pressed");
             SceneManager.LoadScene(nextLevel);
 
         }
 
-        if (Input.GetButtonDown("Interact"))
+        if (Input.GetButton("Interact"))
         {
             Debug.Log("Interact has been pressed");
             SceneManager.LoadScene(otherLevel);
         }
 
-        if (Input.GetButtonDown("Quit"))
+        if (Input.GetButton("Quit"))
         {
             Application.Quit();
             Debug.Log("It worked!");
