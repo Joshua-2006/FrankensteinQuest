@@ -6,10 +6,12 @@ using UnityEngine.SceneManagement;
 public class Door : MonoBehaviour
 {
     public GameObject uiElement;
+    public GameObject uiElement2;
     public string nextLevel;
     private void OnTriggerEnter2D(Collider2D collision)
     {
-            uiElement.SetActive(true); 
+            uiElement.SetActive(true);
+            uiElement2.SetActive(true);
     }
     private void OnTriggerStay2D(Collider2D collision)
     {

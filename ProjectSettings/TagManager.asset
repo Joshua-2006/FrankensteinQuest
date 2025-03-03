@@ -10,6 +10,7 @@ TagManager:
   - Door
   - Wall
   - DeathBarrier
+  - Button
   layers:
   - Default
   - TransparentFX
