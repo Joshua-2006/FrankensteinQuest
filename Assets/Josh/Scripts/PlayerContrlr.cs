@@ -14,12 +14,14 @@ public class PlayerContrlr : MonoBehaviour
     public int jumps = 5;
     public Door door;
 
+    public SpriteRenderer sr;
     public GameObject deathBarrier;
     public GameObject spawnPoint;
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        sr = GetComponent<SpriteRenderer>();
 
         //finding gameObjects 
         deathBarrier = GameObject.Find("DeathBarrier");
@@ -39,6 +41,14 @@ public class PlayerContrlr : MonoBehaviour
         if(grounded == false)
         {
             rb.gravityScale = 4; 
+        }
+        if(horizontal < 0)
+        {
+            sr.flipX = true;
+        }
+        if(horizontal > 0)
+        {
+            sr.flipX = false;
         }
     }
     private void FixedUpdate()
