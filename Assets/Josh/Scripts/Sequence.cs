@@ -5,18 +5,14 @@ using UnityEngine;
 public class Sequence : MonoBehaviour
 {
     public GameObject[] gameObjects;
-    public GameObject one;
-    public GameObject two;
-    public GameObject three;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
+    public string correctSequence = "1234";
+    public string currentSequence = "";
+    private void Start()
     {
-        
+    }
+    public void Update()
+    {
+
     }
 }
