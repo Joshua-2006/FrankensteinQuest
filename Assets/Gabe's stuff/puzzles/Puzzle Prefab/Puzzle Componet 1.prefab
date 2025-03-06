@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 2228217881183699832}
   - component: {fileID: 2228217881183699833}
   - component: {fileID: 2228217881183699814}
+  - component: {fileID: -6144386897984790735}
   m_Layer: 0
   m_Name: Puzzle Componet 1
-  m_TagString: Untagged
+  m_TagString: Puzzle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -133,3 +134,17 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &-6144386897984790735
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2228217881183699815}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0216d3a01646bc24cb426f94d7ab5061, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  completePuzzle: {fileID: 5837348247871713985, guid: d7e06e80c113f3e4aa3000d919c2ac07, type: 3}
+  puzzlePart: {fileID: 0}
