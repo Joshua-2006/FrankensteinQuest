@@ -18,6 +18,9 @@ EditorBuildSettings:
     path: Assets/WormsFolder/Scenes/Level 1.unity
     guid: b8873c69bf065474f916f8a1b791ee89
   - enabled: 1
+    path: Assets/Gabe's stuff/Gabe's other sruff/Level 2.unity
+    guid: 38636b291ec26394f8d19c7d5de06a10
+  - enabled: 1
     path: Assets/WormsFolder/Scenes/Credits.unity
     guid: 9772d256251307b4c8876958cb471fc6
   m_configObjects: {}
