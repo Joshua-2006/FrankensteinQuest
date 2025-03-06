@@ -34,7 +34,7 @@ public class PlayerContrlr : MonoBehaviour
     void Update()
     {
         
-        if(Input.GetKeyDown(KeyCode.Space) && true && jumps != 0)
+        if(Input.GetKeyDown(KeyCode.Space) && grounded && jumps != 0 || Input.GetButtonDown("Jump") && grounded && jumps !=0)
         {
             jumps -= 1;
             grounded = false;
