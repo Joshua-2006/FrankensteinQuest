@@ -8,6 +8,13 @@ public class Door : MonoBehaviour
     public GameObject uiElement;
     public GameObject uiElement2;
     public string nextLevel;
+    public bool hasBodyParts;
+    public GameObject[] bodyParts;
+
+    private void Update()
+    {
+        
+    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
             uiElement.SetActive(true);
