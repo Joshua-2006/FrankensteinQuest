@@ -14,6 +14,7 @@ public class PlayerContrlr : MonoBehaviour
     public int jumps = 5;
     public Door door;
 
+    public Animator anim;
     public SpriteRenderer sr;
     public GameObject deathBarrier;
     public GameObject spawnPoint;
@@ -22,6 +23,7 @@ public class PlayerContrlr : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
+        anim = GetComponent<Animator>();
 
         //finding gameObjects 
         deathBarrier = GameObject.Find("DeathBarrier");
@@ -32,10 +34,11 @@ public class PlayerContrlr : MonoBehaviour
     void Update()
     {
         
-        if(Input.GetKeyDown(KeyCode.Space) && jumps > 0)
+        if(Input.GetKeyDown(KeyCode.Space) && true && jumps != 0)
         {
             jumps -= 1;
             grounded = false;
+            anim.SetInteger("Frank", 2);
             rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
         }
         if(grounded == false)
@@ -44,11 +47,17 @@ public class PlayerContrlr : MonoBehaviour
         }
         if(horizontal < 0)
         {
+            anim.SetInteger("Frank", 1);
             sr.flipX = true;
         }
         if(horizontal > 0)
         {
+            anim.SetInteger("Frank", 1);
             sr.flipX = false;
+        }
+        if(horizontal == 0)
+        {
+            anim.SetInteger("Frank", 0);
         }
     }
     private void FixedUpdate()
@@ -62,7 +71,6 @@ public class PlayerContrlr : MonoBehaviour
         if(collision.gameObject.CompareTag("Ground"))
         {
             grounded = true;
-            rb.gravityScale = 1;
             jumps = 1;
         }
         if(collision.gameObject.CompareTag("Reset"))
