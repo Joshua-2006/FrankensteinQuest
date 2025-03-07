@@ -122,6 +122,25 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &331056481 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 428345861202259366, guid: 6fa95dff7613c0b438071fd4c5c6a53f, type: 3}
+  m_PrefabInstance: {fileID: 428345862978033121}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &331056482
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 331056481}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0216d3a01646bc24cb426f94d7ab5061, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  completePuzzle: {fileID: 5837348247871713985, guid: d7e06e80c113f3e4aa3000d919c2ac07, type: 3}
+  puzzlePart: {fileID: 0}
 --- !u!1 &331775399
 GameObject:
   m_ObjectHideFlags: 0
@@ -3274,25 +3293,6 @@ TilemapCollider2D:
   m_Offset: {x: 0, y: 0}
   m_MaximumTileChangeCount: 99999
   m_ExtrusionFactor: 0
---- !u!1 &884452190 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2228217881183699815, guid: 1d3465ceb77fedc429a63332fc700875, type: 3}
-  m_PrefabInstance: {fileID: 2228217880331923433}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &884452191
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 884452190}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0216d3a01646bc24cb426f94d7ab5061, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  completePuzzle: {fileID: 0}
-  puzzlePart: {fileID: 0}
 --- !u!1 &1785242483
 GameObject:
   m_ObjectHideFlags: 0
@@ -3351,7 +3351,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 428345861202259366, guid: 6fa95dff7613c0b438071fd4c5c6a53f, type: 3}
       propertyPath: m_TagString
-      value: Puzzle
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 428345861202259368, guid: 6fa95dff7613c0b438071fd4c5c6a53f, type: 3}
       propertyPath: m_IsTrigger
@@ -3428,11 +3428,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2228217881183699835, guid: 1d3465ceb77fedc429a63332fc700875, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.57
+      value: 5.67
       objectReference: {fileID: 0}
     - target: {fileID: 2228217881183699835, guid: 1d3465ceb77fedc429a63332fc700875, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.52
+      value: 2.96
       objectReference: {fileID: 0}
     - target: {fileID: 2228217881183699835, guid: 1d3465ceb77fedc429a63332fc700875, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3493,11 +3493,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5837348247871713997, guid: d7e06e80c113f3e4aa3000d919c2ac07, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.4
+      value: 2.46
       objectReference: {fileID: 0}
     - target: {fileID: 5837348247871713997, guid: d7e06e80c113f3e4aa3000d919c2ac07, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.27
+      value: 0.67
       objectReference: {fileID: 0}
     - target: {fileID: 5837348247871713997, guid: d7e06e80c113f3e4aa3000d919c2ac07, type: 3}
       propertyPath: m_LocalPosition.z
