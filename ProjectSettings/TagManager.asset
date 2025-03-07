@@ -11,6 +11,7 @@ TagManager:
   - Wall
   - DeathBarrier
   - Button
+  - Part
   layers:
   - Default
   - TransparentFX
