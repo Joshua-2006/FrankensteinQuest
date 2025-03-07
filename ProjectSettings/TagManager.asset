@@ -6,8 +6,11 @@ TagManager:
   tags:
   - Box
   - Ground
+  - Reset
   - Door
-  - Puzzle
+  - Wall
+  - DeathBarrier
+  - Button
   layers:
   - Default
   - TransparentFX
